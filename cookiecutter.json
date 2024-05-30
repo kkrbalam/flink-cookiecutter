@@ -1,0 +1,14 @@
+{
+  "project_name": "My Flink Project",
+  "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '-') }}",
+  "package_name": "{{ cookiecutter.project_slug.replace('-', '_') }}",
+  "python_version": "3.11",
+  "flink_version": "1.18.1",
+  "flink_major_version": "1.18",
+  "hadoop_version": "3.3",
+  "scala_version": "2.12",
+  "aws_sdk_version": "2.25.62",
+  "author_name": "Your Name",
+  "author_email": "your@email.com",
+  "open_source_license": ["MIT", "BSD-3-Clause", "Apache-2.0", "GPL-3.0-only", "No license"]
+}

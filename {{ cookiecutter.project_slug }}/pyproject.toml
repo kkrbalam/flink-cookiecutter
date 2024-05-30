@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "{{ cookiecutter.project_slug }}"
+version = "0.1.0"
+description = "{{ cookiecutter.project_name }}"
+authors = ["{{ cookiecutter.author_name }} <{{ cookiecutter.author_email }}>"]
+license = "{{ cookiecutter.open_source_license }}"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+apache-flink = "{{ cookiecutter.flink_version }}"
+flink-connector-kafka = "{{ cookiecutter.flink_version }}"
+flink-connector-iceberg = "{{ cookiecutter.flink_version }}"
+flink-connector-adls = "{{ cookiecutter.flink_version }}"
+flink-connector-postgres = "{{ cookiecutter.flink_version }}"
+
+[tool.poetry.dev-dependencies]
+pytest = "^7.2.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
